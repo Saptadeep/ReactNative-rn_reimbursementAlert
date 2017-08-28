@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { LotsOfGreetings } from './common/commonText';
+//import { commonText } from 'common';
 
 export default class App extends React.Component {
   render() {
