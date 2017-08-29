@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { AppRegistry } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
-import { LotsOfGreetings } from './common/commonText.js';
+import LotsOfGreetings  from './common/commonText';
 
-// export default class App extends React.Component {
+export default class First extends Component {
+  render() {
+    return (
+      <LotsOfGreetings />
+    )
+  }
+}
+// const App = () => (
+//   <View>
 //
-//       </LotsOfGreetings>
+//   <LotsOfGreetingsss />
+//   </ View>
+//
+// );
+
+// class Greeting extends Component {
+//   render() {
+//     return (
+//       <Text>Hello {this.props.name}!</Text>
+//     );
+//   }
 // }
-
-const App = () => (
-  <LotsOfGreetings />
-);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+//
+// export default class LotsOfGreetings extends Component {
+//   render() {
+//     return (
+//       <View style={{alignItems: 'center'}}>
+//         <Greeting name='Rexxar' />
+//         <Greeting name='Jaina' />
+//         <Greeting name='Valeera' />
+//       </View>
+//     );
+//   }
+// }
